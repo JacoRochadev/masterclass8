@@ -13,6 +13,7 @@
 
 //20  =>  x
 //100 => 200
+//resultado deve ser 40
 
 import 'dart:io';
 

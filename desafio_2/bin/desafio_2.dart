@@ -9,8 +9,15 @@
 //LEMBRE-SE QUE INFORMAÇÃO < CONHECIMENTO.
 // E estamos aqui pra conseguir conhecimento, informação tem muito na internet.
 
+import 'dart:io';
+
 void main(List<String> arguments) {
-  print(fibonacci(10));
+  print('Informe o tamanho da função: ');
+  var valor = int.parse(stdin.readLineSync()!);
+
+  for (int c = 0; c <= valor; c++) {
+    print(fibonacci(c + 1));
+  }
 }
 
 int fibonacci(int i) {
@@ -19,7 +26,6 @@ int fibonacci(int i) {
   } else if (i == 1) {
     return 1;
   } else {
-    //TODO USAR A RECURSIVIDADE PARA RETORNAR O VALOR CORRETO
     return fibonacci(i - 1) + fibonacci(i - 2);
   }
 }

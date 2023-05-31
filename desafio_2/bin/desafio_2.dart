@@ -16,7 +16,7 @@ void main(List<String> arguments) {
   var valor = int.parse(stdin.readLineSync()!);
 
   for (int c = 0; c <= valor; c++) {
-    print(fibonacci(c + 1));
+    print(fibonacci(c));
   }
 }
 

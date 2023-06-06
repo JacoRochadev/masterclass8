@@ -17,15 +17,36 @@
 
 import 'dart:io';
 
-void main(List<String> arguments) {
+void main() {
+  num? grupo1_1;
+  num? grupo1_2;
+  num? grupo2_1;
+  num? grupo2_2;
+
   print('Informe primeiro valor: ');
-  var grupo1_1 = num.parse(stdin.readLineSync()!);
+  grupo1_1 = stdin.readLineSync() == null
+      ? null
+      : num.parse(
+          stdin.readLineSync()!,
+        );
   print('Informe segundo valor: ');
-  var grupo1_2 = num.parse(stdin.readLineSync()!);
+  grupo1_2 = stdin.readLineSync() == null
+      ? null
+      : num.parse(
+          stdin.readLineSync()!,
+        );
   print('Informe terceiro valor: ');
-  var grupo2_1 = num.parse(stdin.readLineSync()!);
+  grupo2_1 = stdin.readLineSync() == null
+      ? null
+      : num.parse(
+          stdin.readLineSync()!,
+        );
   print('Informe quarto valor: ');
-  var grupo2_2 = num.parse(stdin.readLineSync()!);
+  grupo2_2 = stdin.readLineSync() == null
+      ? null
+      : num.parse(
+          stdin.readLineSync()!,
+        );
 
   var resultRegraDeTres = regraDeTres(
     grupo1_1,
@@ -41,15 +62,15 @@ void main(List<String> arguments) {
   );
 }
 
-num regraDeTres(num grupo1_1, num grupo1_2, num grupo2_1, num grupo2_2) {
-  if (grupo1_1 == 0) {
-    return grupo2_1 * grupo1_2 / grupo2_2;
-  } else if (grupo1_2 == 0) {
-    return grupo2_2 * grupo1_1 / grupo2_1;
-  } else if (grupo2_1 == 0) {
-    return grupo1_1 * grupo2_2 / grupo1_2;
-  } else if (grupo2_2 == 0) {
-    return grupo1_2 * grupo2_1 / grupo1_1;
+num regraDeTres(num? grupo1_1, num? grupo1_2, num? grupo2_1, num? grupo2_2) {
+  if (grupo1_1 == 0 && grupo1_1 == null) {
+    return grupo2_1! * grupo1_2! / grupo2_2!;
+  } else if (grupo1_2 == 0 && grupo1_1 == null) {
+    return grupo2_2! * grupo1_1! / grupo2_1!;
+  } else if (grupo2_1 == 0 && grupo1_1 == null) {
+    return grupo1_1! * grupo2_2! / grupo1_2!;
+  } else if (grupo2_2 == 0 && grupo1_1 == null) {
+    return grupo1_2! * grupo2_1! / grupo1_1!;
   } else {
     return 0;
   }

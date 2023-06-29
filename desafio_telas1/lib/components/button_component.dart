@@ -9,7 +9,7 @@ class ButtonComponent extends StatelessWidget {
     super.key,
     required this.label,
     this.image,
-    this.color = Colors.blue,
+    this.color = Colors.white,
     this.textColor,
   });
 

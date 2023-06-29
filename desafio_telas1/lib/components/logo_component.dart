@@ -18,7 +18,7 @@ class LogoComponent extends StatelessWidget {
                   width: 30,
                   height: 30,
                   decoration: const BoxDecoration(
-                    color: Colors.blue,
+                    color: Color(0xFF5E5CE5),
                     shape: BoxShape.circle,
                   ),
                 ),
@@ -27,7 +27,7 @@ class LogoComponent extends StatelessWidget {
                 width: 30,
                 height: 30,
                 decoration: const BoxDecoration(
-                  color: Colors.blue,
+                  color: Color(0xFF5E5CE5),
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(30),
                     bottomRight: Radius.circular(1),
@@ -43,7 +43,7 @@ class LogoComponent extends StatelessWidget {
           width: 30,
           height: 68,
           decoration: const BoxDecoration(
-            color: Colors.blue,
+            color: Color(0xFF5E5CE5),
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(30),
               bottomRight: Radius.circular(1),

@@ -27,7 +27,7 @@ class MainApp extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           Text(
-            'Manage your expenses\nSeamlessly',
+            'Manage your expenses.\nSeamlessly.',
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.titleSmall!.copyWith(
                   color: Colors.grey,
@@ -36,10 +36,10 @@ class MainApp extends StatelessWidget {
           const SizedBox(height: 30),
           const ButtonComponent(
             label: 'Sing Up with Email ID',
+            color: Color(0xFF5E5CE5),
           ),
           const ButtonComponent(
             label: 'Sing Up with Google',
-            color: Colors.white,
             textColor: Colors.black,
             image: 'assets/images/logo_google.png',
           ),
